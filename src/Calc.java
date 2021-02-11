@@ -119,7 +119,7 @@ public class Calc {
     }
 
     static void show_solution_process() {
-        string = String.format("      2.00 * %.2f       %.2f", a, 2 * a);
+        string = String.format("      2.00 * %.2f         %.2f", a, 2 * a);
         length_compare = (buffer.length() - buffer_length) - 3;
         length_compare_reserve = (string.length() - string_length) - 3;
         System.out.println(buffer);
@@ -133,7 +133,7 @@ public class Calc {
             System.out.print("-");
         System.out.print(" = ");
         length = Math.max(length_compare, length_compare_reserve);
-        for (int y = 0; y < length; y++) {
+        for (int y = 0; y < length - 1; y++) {
             System.out.print("-");
         }
         System.out.println("\n" + string);
