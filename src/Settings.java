@@ -32,9 +32,9 @@ public class Settings {
                     System.out.print("Option (On/Off): ");
                     value = scanner.next();
                     System.out.println(Calc.line);
-                    if (value.toLowerCase().equals("on"))
+                    if (value.equalsIgnoreCase("on"))
                         simple_mode = true;
-                    else if (value.toLowerCase().equals("off")) {
+                    else if (value.equalsIgnoreCase("off")) {
                         simple_mode = false;
                         if (viet_theorem)
                             viet_theorem = false;
@@ -45,11 +45,11 @@ public class Settings {
                     System.out.print("Option (On/Off): ");
                     value = scanner.next();
                     System.out.println(Calc.line);
-                    if (value.toLowerCase().equals("on"))
+                    if (value.equalsIgnoreCase("on"))
                         viet_theorem = true;
                     if (!simple_mode) {
                         simple_mode = true;
-                    } else if (value.toLowerCase().equals("off"))
+                    } else if (value.equalsIgnoreCase("off"))
                         viet_theorem = false;
                     refresh();
                     break;

@@ -28,9 +28,9 @@ public class Calc {
 
         }
         catch (NumberFormatException exception) {
-            if (a_str.toLowerCase().equals("settings"))
+            if (a_str.equalsIgnoreCase("settings"))
                 Settings.settings();
-            else if (a_str.toLowerCase().equals("exit")) {
+            else if (a_str.equalsIgnoreCase("exit")) {
                 System.out.println(line);
                 for (int x = 0; x < 4; x++)
                     System.out.println();
@@ -119,7 +119,7 @@ public class Calc {
     }
 
     static void show_solution_process() {
-        string = String.format("      2.00 * %.2f         %.2f", a, 2 * a);
+        string = String.format("      2.00 * %.2f       %.2f", a, 2 * a);
         length_compare = (buffer.length() - buffer_length) - 3;
         length_compare_reserve = (string.length() - string_length) - 3;
         System.out.println(buffer);
