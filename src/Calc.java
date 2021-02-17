@@ -36,6 +36,12 @@ public class Calc {
                     System.out.println();
                 System.exit(0);
             }
+            else if (a_str.equalsIgnoreCase("clear")) {
+                for (int x = 0; x < 100; x++) {
+                    System.out.println();
+                }
+                return false;
+            }
             else {
                 System.out.println(line);
                 System.out.println("Error 23: Not Number");

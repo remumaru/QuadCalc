@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Settings {
-    public static boolean simple_mode = true;
+    public static boolean simple_mode = false;
     public static boolean viet_theorem = false;
     public static String value;
     static String choose;
