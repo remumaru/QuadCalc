@@ -148,10 +148,11 @@ public class Calc {
     }
 
     public static void main(String[] args) {
+        int loop_exception_fix = 0;
         for (int x = 0; x < 100; x++) {
             System.out.println();
         }
-            while (true) {
+            while (loop_exception_fix < 10000000) {
                 if (!scan())
                     continue;
                 dis = Math.pow(b, 2) - 4 * a * c;
@@ -194,6 +195,7 @@ public class Calc {
                 System.out.println(string + "\n" + line);
                 for (int x = 0; x < 4; x++)
                     System.out.println();
+                loop_exception_fix++;
             }
     }
 }
